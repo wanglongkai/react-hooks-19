@@ -6,8 +6,8 @@ import Home from '../pages/Home';
 // 路由懒加载
 const UseStateTest = lazy(() => import('../pages/hooks/UseStateTest'));
 const UseReducerTest = lazy(() => import('../pages/hooks/UseReducerTest'));
-const UseActionStateTest = lazy(() => import('../pages/hooks/useActionStateTest'));
-const UseOptimisticTest = lazy(() => import('../pages/hooks/useOptimisticTest'));
+const UseActionStateTest = lazy(() => import('../pages/hooks/UseActionStateTest'));
+const UseOptimisticTest = lazy(() => import('../pages/hooks/UseOptimisticTest'));
 
 const router = createBrowserRouter([
   {

@@ -1,7 +1,7 @@
 import { useActionState } from 'react';
 import { Input, Button } from 'antd';
 
-const useActionStateTest: React.FC = () => {
+const UseActionStateTest: React.FC = () => {
   const originalAction = async (preState: number, formData: FormData) => {
     await new Promise((resolve) => setTimeout(resolve, 1000));
     return preState + Number(formData.get('count'));
@@ -29,4 +29,4 @@ const useActionStateTest: React.FC = () => {
   );
 };
 
-export default useActionStateTest;
+export default UseActionStateTest;

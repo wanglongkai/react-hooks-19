@@ -1,7 +1,7 @@
 import { Button } from 'antd';
 import { useOptimistic, startTransition, useState } from 'react';
 
-const useOptimisticTest: React.FC = () => {
+const UseOptimisticTest: React.FC = () => {
   /**
    * 乐观更新
    * 需要两个状态：真正的状态和乐观状态
@@ -51,4 +51,4 @@ const useOptimisticTest: React.FC = () => {
   );
 };
 
-export default useOptimisticTest;
+export default UseOptimisticTest;
