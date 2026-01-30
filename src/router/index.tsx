@@ -7,6 +7,7 @@ import Home from '../pages/Home';
 const UseStateTest = lazy(() => import('../pages/hooks/UseStateTest'));
 const UseReducerTest = lazy(() => import('../pages/hooks/UseReducerTest'));
 const UseActionStateTest = lazy(() => import('../pages/hooks/useActionStateTest'));
+const UseOptimisticTest = lazy(() => import('../pages/hooks/useOptimisticTest'));
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: 'test/hooks/useActionState',
         element: <UseActionStateTest />,
+      },
+      {
+        path: 'test/hooks/useOptimistic',
+        element: <UseOptimisticTest />,
       },
     ],
   },

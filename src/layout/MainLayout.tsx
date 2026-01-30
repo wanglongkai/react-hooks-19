@@ -72,6 +72,11 @@ const MainLayout: React.FC = () => {
                   icon: <ThunderboltOutlined />,
                   label: 'useActionState',
                 },
+                {
+                  key: '/test/hooks/useOptimistic',
+                  icon: <ThunderboltOutlined />,
+                  label: 'useOptimistic',
+                },
               ],
             },
           ]}
