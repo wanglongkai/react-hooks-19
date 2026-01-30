@@ -1,8 +1,12 @@
 import { createBrowserRouter } from 'react-router-dom';
+import { lazy } from 'react';
 import MainLayout from '../layout/MainLayout';
 import Home from '../pages/Home';
-import UseStateTest from '../pages/hooks/UseStateTest';
-import UseReducerTest from '../pages/hooks/UseReducerTest';
+
+// 路由懒加载
+const UseStateTest = lazy(() => import('../pages/hooks/UseStateTest'));
+const UseReducerTest = lazy(() => import('../pages/hooks/UseReducerTest'));
+const UseActionStateTest = lazy(() => import('../pages/hooks/useActionStateTest'));
 
 const router = createBrowserRouter([
   {
@@ -20,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: 'test/hooks/useReducer',
         element: <UseReducerTest />,
+      },
+      {
+        path: 'test/hooks/useActionState',
+        element: <UseActionStateTest />,
       },
     ],
   },

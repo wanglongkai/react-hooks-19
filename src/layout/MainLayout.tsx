@@ -67,6 +67,11 @@ const MainLayout: React.FC = () => {
                   icon: <ThunderboltOutlined />,
                   label: 'useReducer',
                 },
+                {
+                  key: '/test/hooks/useActionState',
+                  icon: <ThunderboltOutlined />,
+                  label: 'useActionState',
+                },
               ],
             },
           ]}
