@@ -79,6 +79,18 @@ const MainLayout: React.FC = () => {
                 },
               ],
             },
+            {
+              key: 'tanstack',
+              icon: <ExperimentOutlined />,
+              label: 'Tanstack Query',
+              children: [
+                {
+                  key: '/test/tanstack/reactQuery',
+                  icon: <ThunderboltOutlined />,
+                  label: 'React Query',
+                },
+              ],
+            },
           ]}
         />
       </Sider>

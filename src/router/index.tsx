@@ -8,6 +8,7 @@ const UseStateTest = lazy(() => import('../pages/hooks/UseStateTest'));
 const UseReducerTest = lazy(() => import('../pages/hooks/UseReducerTest'));
 const UseActionStateTest = lazy(() => import('../pages/hooks/UseActionStateTest'));
 const UseOptimisticTest = lazy(() => import('../pages/hooks/UseOptimisticTest'));
+const ReactQueryTest = lazy(() => import('../pages/tanstack/ReactQueryTest'));
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: 'test/hooks/useOptimistic',
         element: <UseOptimisticTest />,
+      },
+      {
+        path: 'test/tanstack/reactQuery',
+        element: <ReactQueryTest />,
       },
     ],
   },
