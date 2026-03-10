@@ -1,1 +1,12 @@
 @import 'tailwindcss';
+
+@theme {
+  --color-primary: #0070f3;
+}
+
+/* 任意变体更改深处样式：.customtest的后代.ant-btn */
+@layer components {
+  .customtest .ant-btn {
+    @apply bg-blue-500! font-bold! text-red-500!;
+  }
+}

@@ -17,7 +17,7 @@ const Home: React.FC = () => {
 
       <Card title='Zustand State Management Demo' style={{ maxWidth: 400 }}>
         <div className='flex flex-col items-center gap-4'>
-          <div className='text-4xl font-bold'>{count}</div>
+          <div className='text-4xl font-bold text-primary'>{count}</div>
           <Space>
             <Button type='primary' onClick={increment}>
               Increment

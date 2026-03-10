@@ -46,8 +46,7 @@ export default function ReactQueryTest() {
           </div>
         ))}
       </div>
-
-      <form action={formAction}>
+      <form action={formAction} className='customtest'>
         <input type='text' name='title' placeholder='Title' />
         <input type='text' name='views' placeholder='Views' />
         <Button htmlType='submit'>Submit</Button>
