@@ -10,6 +10,7 @@ const UseActionStateTest = lazy(() => import('../pages/hooks/UseActionStateTest'
 const UseOptimisticTest = lazy(() => import('../pages/hooks/UseOptimisticTest'));
 const ReactQueryTest = lazy(() => import('../pages/tanstack/ReactQueryTest'));
 const CvaTest = lazy(() => import('../pages/stylecom/cva'));
+const ZustandTest = lazy(() => import('../pages/store/ZustandTest'));
 const router = createBrowserRouter([
   {
     path: '/',
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: '/cva',
         element: <CvaTest />,
+      },
+      {
+        path: '/store/zustand',
+        element: <ZustandTest />,
       },
     ],
   },

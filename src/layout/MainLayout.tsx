@@ -96,6 +96,18 @@ const MainLayout: React.FC = () => {
               icon: <ExperimentOutlined />,
               label: 'Cva clsx twMerge',
             },
+            {
+              key: 'store',
+              icon: <ExperimentOutlined />,
+              label: 'State Management',
+              children: [
+                {
+                  key: '/store/zustand',
+                  icon: <ThunderboltOutlined />,
+                  label: 'Zustand',
+                },
+              ],
+            },
           ]}
         />
       </Sider>

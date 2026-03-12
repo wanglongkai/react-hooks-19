@@ -1,15 +1,35 @@
 import { create } from 'zustand';
+import { produce } from 'immer';
 
-interface AppState {
-  count: number;
+interface counterState {
+  value: {
+    count: number;
+  };
   increment: () => void;
   decrement: () => void;
   reset: () => void;
 }
 
-export const useStore = create<AppState>((set) => ({
-  count: 0,
-  increment: () => set((state) => ({ count: state.count + 1 })),
-  decrement: () => set((state) => ({ count: state.count - 1 })),
-  reset: () => set({ count: 0 }),
+export const useStore = create<counterState>((set) => ({
+  value: {
+    count: 0,
+  },
+  increment: () =>
+    set(
+      produce((state) => {
+        state.value.count += 1;
+      }),
+    ),
+  decrement: () =>
+    set(
+      produce((state) => {
+        state.value.count -= 1;
+      }),
+    ),
+  reset: () =>
+    set(
+      produce((state) => {
+        state.value.count = 0;
+      }),
+    ),
 }));
