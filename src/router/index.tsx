@@ -9,7 +9,7 @@ const UseReducerTest = lazy(() => import('../pages/hooks/UseReducerTest'));
 const UseActionStateTest = lazy(() => import('../pages/hooks/UseActionStateTest'));
 const UseOptimisticTest = lazy(() => import('../pages/hooks/UseOptimisticTest'));
 const ReactQueryTest = lazy(() => import('../pages/tanstack/ReactQueryTest'));
-
+const CvaTest = lazy(() => import('../pages/stylecom/cva'));
 const router = createBrowserRouter([
   {
     path: '/',
@@ -38,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: 'test/tanstack/reactQuery',
         element: <ReactQueryTest />,
+      },
+      {
+        path: '/cva',
+        element: <CvaTest />,
       },
     ],
   },

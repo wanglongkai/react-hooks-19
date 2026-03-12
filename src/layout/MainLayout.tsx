@@ -37,7 +37,7 @@ const MainLayout: React.FC = () => {
   return (
     <Layout className='h-screen w-full'>
       <Sider trigger={null} collapsible collapsed={collapsed} className='h-full'>
-        <div className='h-16 flex items-center justify-center text-white text-xl font-bold overflow-hidden whitespace-nowrap'>
+        <div className='flex h-16 items-center justify-center overflow-hidden text-xl font-bold whitespace-nowrap text-white'>
           {collapsed ? 'Admin' : 'React 19 Admin'}
         </div>
         <Menu
@@ -91,6 +91,11 @@ const MainLayout: React.FC = () => {
                 },
               ],
             },
+            {
+              key: 'cva',
+              icon: <ExperimentOutlined />,
+              label: 'Cva clsx twMerge',
+            },
           ]}
         />
       </Sider>
@@ -109,7 +114,7 @@ const MainLayout: React.FC = () => {
               height: 64,
             }}
           />
-          <div className='ml-auto mr-4 text-gray-600'>User: Admin</div>
+          <div className='mr-4 ml-auto text-gray-600'>User: Admin</div>
         </Header>
         <Content
           style={{
