@@ -5,7 +5,10 @@ import { useStore } from '../store/useStore';
 const { Title, Paragraph } = Typography;
 
 const Home: React.FC = () => {
-  const { count, increment, decrement, reset } = useStore();
+  const count = useStore((state) => state.count);
+  const increment = useStore((state) => state.increment);
+  const decrement = useStore((state) => state.decrement);
+  const reset = useStore((state) => state.reset);
 
   return (
     <div className='p-6'>
